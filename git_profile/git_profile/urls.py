@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from git_profile.endpoints.login import Login
+from git_profile.endpoints.github import GithubCallback
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r"^login", Login.as_view(), name='login'),
+    url(r"^githubcallback", GithubCallback.as_view(), name='github-callback'),
 ]

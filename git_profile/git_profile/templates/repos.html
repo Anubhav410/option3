@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Repo Details</title>
+</head>
+<style>
+    table, th, td {
+         border: 1px solid black;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Star Gazers</td>
+        <td>Watchers</td>
+    </tr>
+    {% for repo in repos %}
+    <tr>
+        <td><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></td>
+        <td>{{repo.stargazers_count}}</td>
+        <td>{{repo.watchers_count}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Django==1.8.1
+psycopg2==2.7.1
+djutil
+djangorestframework==3.1
+requests==2.21.0
