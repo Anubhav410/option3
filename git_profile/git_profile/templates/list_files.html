@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Files</title>
+</head>
+<body>
+<ol>
+    {% for file in file_list %}
+        <li><a href="{% url 'file-details' file_id=file.id %}" target="_blank">{{file.name}}</a></li>
+    {% endfor %}
+</ol>
+</body>
+</html>

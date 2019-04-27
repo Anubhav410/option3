@@ -1,7 +1,7 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from django.shortcuts import render
 from django.conf import settings
+from django.shortcuts import render
+from rest_framework.views import APIView
+
 
 class Login(APIView):
     def get(self, request):

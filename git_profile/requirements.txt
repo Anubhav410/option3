@@ -3,3 +3,5 @@ psycopg2==2.7.1
 djutil
 djangorestframework==3.1
 requests==2.21.0
+django_extensions
+xlrd

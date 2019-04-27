@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel File Uploader</title>
+</head>
+<body>
+<div>Upload Excel File below</div>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" accept=".xls,.xlsx,.xlsm" >
+    <button type="submit">Upload</button>
+</form>
+
+<br><br>
+<a href="{% url 'list-files' %}">See list of uploaded files</a>
+
+</body>
+</html>

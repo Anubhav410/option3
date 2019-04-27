@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{file_name}}</title>
+</head>
+<style>
+    table, th, td {
+         border: 1px solid black;
+    }
+</style>
+<body>
+<table>
+    <thead>
+        {% for col in headers %}
+        <th>{{col}}</th>
+        {% endfor %}
+    </thead>
+    {% for row in rows %}
+    <tr>
+        {% for data in row %}
+        <td>{{data}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
